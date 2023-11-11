@@ -6,9 +6,9 @@ public class Calculator {
 
         // Oкончание
         String rubles;
-        if (result % 10 == 1) {
+        if (result % 10 == 1 && result % 100 != 11) {
             rubles = "рубль";
-        } else if (result % 10 >= 2 && result % 10 <= 4) {
+        } else if (result % 10 >= 2 && result % 10 <= 4 && (result % 100 < 10 || result % 100 > 20)) {
             rubles = "рубля";
         } else {
             rubles = "рублей";
