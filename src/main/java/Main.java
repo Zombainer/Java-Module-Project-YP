@@ -44,8 +44,9 @@ public class Main {
                     }
                 } else {
                     System.out.println("Введено некорректное значение, попробуйте снова. ");
+                    scanner.next();
                 }
-                scanner.nextLine();
+
             }
 
             System.out.println("Товар добавден.");
