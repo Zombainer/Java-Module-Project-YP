@@ -16,6 +16,8 @@ public class Main {
                 people = scanner.nextInt();
                 if (people > 1) {
                     break;
+                } else {
+                    System.out.println("Введено не корректное количество людей.");
                 }
             } else {
                 System.out.println("Введено не корректное значение, введите количество людей.");
@@ -33,7 +35,7 @@ public class Main {
             }
             System.out.println("Ведите cтоймость товара: ");
             while (true) {
-                if (scanner.hasNextInt()) {
+                if (scanner.hasNextDouble()) {
                     price = scanner.nextDouble();
                     if (price > 1) {
                         break;
@@ -43,7 +45,7 @@ public class Main {
                 } else {
                     System.out.println("Введено некорректное значение, попробуйте снова. ");
                 }
-                scanner.next();
+                scanner.nextLine();
             }
 
             System.out.println("Товар добавден.");
